@@ -34,4 +34,4 @@ Thumbs.db
 .idea/
 
 # === Logs ===
-*.log
+*.log.env
