@@ -1,0 +1,37 @@
+# === Données sensibles (PII : téléphones, noms) ===
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# === Python ===
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# === R ===
+.Rhistory
+.RData
+.Rapp.history
+.Rproj.user/
+renv/library/
+renv/local/
+renv/cellar/
+renv/staging/
+
+# === Power BI ===
+*.pbix.bak
+~$*
+
+# === OS / éditeurs ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Logs ===
+*.log
