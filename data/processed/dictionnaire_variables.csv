@@ -1,0 +1,23 @@
+variable,label,source_brut
+hh_id,Identifiant ménage anonymisé (SHA-256 salé du téléphone),
+wave,Vague d'enquête (2021 ou 2022),
+enfant_slot,Position de l'enfant dans le roster ménage (1-27),
+in_panel_hh,Ménage présent dans les deux vagues,
+statut_enfant,panel_present / only_2021 / only_2022,
+enfant_present_menage,Enfant toujours dans le ménage en 2022 (cfr00),
+region,Région d'enquête,ST04 / cm00_region
+commune,Commune d'enquête,ST05 / commune
+sexe_cm,Sexe du chef de ménage,LS05
+age_cm,Âge du chef de ménage,LS06
+niveau_educ_cm,Niveau d'éducation du chef de ménage,LS08
+profession_cm,Profession du chef de ménage,LS09
+age_enfant,Âge de l'enfant en années révolues,age_enfant_N
+sexe_enfant,Sexe de l'enfant,sexe_enfant_N
+scolarise,Enfant scolarisé l'année scolaire courante,SC01_01_N / cfr02_N
+classe,Classe actuelle de l'enfant,SC01_02_N / cfr03_N
+type_ecole,Type d'école,SC01_04_N / cfr05_N
+notes,Appréciation des notes,SC01_05_N / cfr06_N
+raison_non_scol,Raison de non-scolarisation,SC01_06_N / cfr07_N
+cours_particuliers,Suit des cours particuliers,SC01_07_N / cfr08_N
+classe_2019_20,"Classe en 2019-2020 (rétrospectif, 2021 seulement)",SC02_01_N
+classe_2018_19,"Classe en 2018-2019 (rétrospectif, 2021 seulement)",SC03_01_N
