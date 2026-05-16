@@ -532,7 +532,19 @@ def main():
     enfants_22 = reshape_enfants_2022(df22, choices_22)
     enfants = pd.concat([enfants_21, enfants_22], ignore_index=True)
 
+    # Déduplication des lignes enfant-vague : les 8 ménages aux téléphones
+    # dupliqués (erreurs de saisie) produisent des enfants en double lors du
+    # reshape. On garde la première occurrence de chaque (hh_id, slot, vague).
+    n_before = len(enfants)
+    enfants = enfants.drop_duplicates(
+        subset=['hh_id', 'enfant_slot', 'wave'], keep='first'
+    ).reset_index(drop=True)
+    if n_before != len(enfants):
+        log(f"Déduplication enfants : {n_before} → {len(enfants)} "
+            f"({n_before - len(enfants)} doublons enfant-vague retirés)")
+
     enfants = carry_forward_demos(enfants)
+
     enfants = add_status(enfants)
     enfants = merge_with_menage(enfants, menages)
 
