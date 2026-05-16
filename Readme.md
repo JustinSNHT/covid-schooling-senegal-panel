@@ -2,7 +2,7 @@
 
 Analyse reproductible de l'impact de la pandémie de COVID-19 sur les trajectoires scolaires des enfants au Sénégal, à partir d'un panel de 969 ménages enquêtés en 2021 puis ré-interrogés en 2022.
 
-## 🚧 Statut
+## Statut
 
 Projet en construction. Phase de cadrage terminée — voir [`docs/01_framing.md`](docs/01_framing.md).
 
