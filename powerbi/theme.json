@@ -1,0 +1,65 @@
+{
+  "name": "COVID Scolarisation Sénégal",
+  "dataColors": [
+    "#1f77b4",
+    "#d62728",
+    "#2ca02c",
+    "#9467bd",
+    "#ff7f0e",
+    "#17becf",
+    "#8c564b",
+    "#e377c2"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#333333",
+  "tableAccent": "#1f77b4",
+  "good": "#2ca02c",
+  "neutral": "#9e9e9e",
+  "bad": "#d62728",
+  "maximum": "#08306b",
+  "center": "#f7f7f7",
+  "minimum": "#d62728",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 14,
+      "color": "#1a1a1a"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#333333"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#444444"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 32,
+      "color": "#1f77b4"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#E6E6E6" } }, "radius": 6 }],
+        "visualHeaderTooltip": [{ "color": { "solid": { "color": "#333333" } } }],
+        "title": [{
+          "show": true,
+          "fontColor": { "solid": { "color": "#1a1a1a" } },
+          "fontSize": 13,
+          "fontFamily": "Segoe UI Semibold",
+          "alignment": "left"
+        }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#F7F8FA" } }, "transparency": 0 }]
+      }
+    }
+  }
+}
